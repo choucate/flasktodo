@@ -45,12 +45,6 @@ def delete(todo_id):
     db.session.commit()
     return redirect(url_for("home"))
 
-#@app.route("/alltodos/", methods=["GET"])
-#def get():
-    todo_list = Todo.query.all()
-    #result = todo_schema.dump(todo_list)
-   #return jsonify(todo_list)
- #   return render_template("base.html", todo_list=todo_list
 
 if __name__ == "__main__":
     db.create_all()
